@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/task2-set.css">
+	<title>设置</title>
+</head>
+<body>
+	<header class="header1">
+		<img class="header1-img" src="images/翻牌1.png" onclick="jumpback()">
+	</header>
+	<header class="header2">
+		<div class="header2-inner">玩家配比</div>
+	</header>
+	<main>
+		<div class="roles">
+			<div class="keeler">
+				<img class="keeler-img" src="images/keeler.png">
+				<span class="keeler-text" id="keelertext">杀手&emsp;人</span>
+			</div>
+			<div class="civilian">
+				<img class="civilian-img" src="images/civilian.png">
+				<span class="civilian-text" id="civiliantext">平民&emsp;人</span>
+			</div>
+		</div>
+
+		<div class="setting">
+			<span class="setting-text1">请输入玩家数量</span>
+			<input  class="inputtext" id="inputid" type="text" name="people" onchange="setting(event)" onkeyup="this.value=this.value.replace(/[^\d]/g,'')">
+			<span class="setting-text2">玩家数量为4-18</span>
+		</div>
+
+		<div class="alert-background" id="hiddenalert">
+			<div class="alert">
+				<p class="alert-text">请输入正确的玩家数量</p>
+				<div class="btns">
+					<button class="btn1" onclick="document.getElementById('hiddenalert').style.display='none'">取消</button><!--
+				--><button onclick="document.getElementById('hiddenalert').style.display='none'">确认</button>
+				</div>
+			</div>
+		</div>
+		
+	</main>
+	<footer>
+		<button id="but" onclick="jump()">去发牌</button>
+	</footer>
+	<script type="text/javascript" src="js/task2-set.js"></script>
+	<script type="text/javascript">
+		function jumpback(){
+		window.location.href="task2-1.html";
+	}
+	</script>
+</body>
+</html>

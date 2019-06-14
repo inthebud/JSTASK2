@@ -1,0 +1,143 @@
+html{
+    font-size: 62.5%;
+}
+body,p,ul{
+    margin:0;
+    padding:0;
+}
+ul,li{list-style: none;}
+.header{
+    max-width: 51rem;
+    margin:auto;
+    padding:  1rem 0;
+    background-color: #29bde0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.5rem;
+    color: white;
+}
+.headerIcon1{
+    width: 1.5rem;
+    height: 3rem;
+    background-image: url(../images/翻牌1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-left: 2rem;
+}
+.headerIcon2{
+    height: 33px;
+    width:33px;
+    background-image: url(../images/22.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-right: 2rem;
+}
+.main{
+    padding-top: 1rem;
+    background-color: #f0f0f0;
+    max-width: 51rem;
+    min-height: 100vh;
+    margin:0 auto 7rem auto;
+}
+.footer{
+    position: fixed;
+    bottom: 0;left: 0;right: 0;
+    display: flex;
+    justify-content: space-between;
+    max-width: 51rem;
+    margin:auto;
+    background-color: rgba(41,189,224,0.5);
+}
+.footer-left,.footer-right{
+    width: 50%;
+    padding:1rem;
+}
+.bt1,.bt2{
+    background-color: #fbb435;
+    width: 100%;
+    padding:1rem 0 1rem 0;
+    color:white;
+    outline: none;
+    border-width: 0;
+    font-size: 2rem;
+    border-radius: 5px;
+}
+.days{
+    width: 90%;
+    margin:auto;
+    margin-bottom: 1rem;
+    background-color: white;
+    color:#29bde0;
+    font-size: 2rem;
+    text-align: center;
+}
+.day1{
+    padding:1rem 0;
+    border:1px solid #d0d0d0;
+}
+.lines-outter{
+    border:1px solid #d0d0d0;
+}
+.img1,.img2{
+    width: 2.6rem;
+    height: 2.6rem;
+    margin-left: -4.8rem;
+    margin-top: -0.5rem;
+    display: inline-block;
+    float: left;
+    background-color: white;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    border:1px solid #d0d0d0;
+}
+.img1{
+    background-image: url(../images/night.png);
+}
+.img2{
+    background-image: url(../images/day.png);
+}
+.lines{
+    width: 70%;
+    padding-left: 3rem;
+    margin:auto;
+    border-left:2px solid #d0d0d0;
+}
+.lines>li{
+    position: relative;
+    padding:0.5rem;
+    margin: 1rem 0;
+    color: white;
+}
+.blue{
+    background-color: #29bde0;
+}
+.green{background-color:#83b09a;
+}
+.blue:before{
+    content: "";
+    width: 0;
+    height: 0;
+    margin-top: 0.2rem;
+    border-top: 0.8rem solid transparent;
+    border-bottom: 0.8rem solid transparent;
+    border-right: 0.7rem solid #29bde0;
+    position: absolute;
+    left: -0.6rem;
+}
+.green:before{
+    content: "";
+    width: 0;
+    height: 0;
+    margin-top: 0.2rem;
+    border-top: 0.8rem solid transparent;
+    border-bottom: 0.8rem solid transparent;
+    border-right: 0.7rem solid #83b09a;
+    position: absolute;
+    left: -0.6rem;
+}
+.describe{
+    color:black;
+    font-size: 1.5rem;
+}
